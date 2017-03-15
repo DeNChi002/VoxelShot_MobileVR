@@ -123,6 +123,7 @@ public class EnemyBase : MonoBehaviorExpansion, IDamageable<int>, IRegionSettabl
 	/// <param name="_damageValue">Damage value.</param>
 	public void Damage( int _damageValue)
 	{
+        //体力が0の場合死亡
 		if (hp > 0 && (hp -= _damageValue) <= 0)
 		{
 			Dead();
@@ -149,6 +150,7 @@ public class EnemyBase : MonoBehaviorExpansion, IDamageable<int>, IRegionSettabl
 							//agent.Resume();
 							//animator.speed = 1.0f;
 						}
+
 						isDamageAnim = false;
 					});
 				}
@@ -253,6 +255,7 @@ public class EnemyBase : MonoBehaviorExpansion, IDamageable<int>, IRegionSettabl
 			var effectScore = Resources.Load("EffectDefeatScore") as GameObject;
 			var score = Instantiate(effectScore, new Vector3(transform.position.x, transform.position.y + 2.0f, transform.position.z), Quaternion.identity);
 			score.GetComponent<EffectDefeatScore>().Set(currentScore);
+
 			// スコア加算通知
 			GameManager.Instance.AddScore(currentScore);
 		}
@@ -277,11 +280,14 @@ public class EnemyBase : MonoBehaviorExpansion, IDamageable<int>, IRegionSettabl
 
 	void Start()
 	{
+        //NavMeshAgentに目標座標を代入
 		agent.destination = moveTarget.position;
+
 		thisRenderer.material = arrayChangeMat[Random.Range(0, arrayChangeMat.Length)];
 
 		StartCoroutine(MoveNormalSpeed(agent));
 
+        //Rigidbodyを取得
 		Rigidbody[] arrayRigid = transform.GetComponentsInChildren<Rigidbody>();
 
 		foreach (Rigidbody rigid in arrayRigid)
@@ -313,6 +319,7 @@ public class EnemyBase : MonoBehaviorExpansion, IDamageable<int>, IRegionSettabl
 			agent.enabled = false;
 		}
 
+        //敵の方向はプレイヤーカメラの方を見続けるようにする
 		transform.LookAt(ControllerManager.Instance.EyeCameraObj.transform);
 
 		//WaitAfter(3.0f, ()=> { Dead(); });
@@ -332,6 +339,7 @@ public class EnemyBase : MonoBehaviorExpansion, IDamageable<int>, IRegionSettabl
 		}
 	}
 
+    //NavMeshAgentの動作
 	IEnumerator MoveNormalSpeed(UnityEngine.AI.NavMeshAgent agent)
 	{
 		if (agent.enabled)
@@ -346,11 +354,12 @@ public class EnemyBase : MonoBehaviorExpansion, IDamageable<int>, IRegionSettabl
 				// OffMeshLinkに乗ったので、NavmeshAgentによる移動を止めて、
 				// OffMeshLinkの終わりまでNavmeshAgent.speedと同じ速度で移動
 				agent.Stop();
+
 				yield return new WaitWhile(() =>
 				{
 					modelRoot.position = Vector3.MoveTowards(
 						modelRoot.position,
-												agent.currentOffMeshLinkData.endPos, agent.speed * Time.deltaTime);
+											agent.currentOffMeshLinkData.endPos, agent.speed * Time.deltaTime);
 					return Vector3.Distance(modelRoot.position, agent.currentOffMeshLinkData.endPos) > 0.1f;
 				});
 
@@ -361,6 +370,7 @@ public class EnemyBase : MonoBehaviorExpansion, IDamageable<int>, IRegionSettabl
 		}
 	}
 
+    //敵撃破時のメソッド
 	private void OnDestroy()
 	{
 		switch (soundType)
