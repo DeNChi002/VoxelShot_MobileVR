@@ -1,0 +1,291 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d41887b1546f5c44ab54e7e65aad3bc, type: 3}
+  m_Name: Buildings
+  m_EditorClassIdentifier: 
+  combinedMaterialInfo: []
+  materials:
+  - {fileID: 2100000, guid: 2d5c2d2ed7676c64dbbee553b8181859, type: 2}
+  - {fileID: 2100000, guid: a29f8f8f2c03b354eb6ac7674bc35868, type: 2}
+  - {fileID: 2100000, guid: 3033bc4da4cf4c64a902984a8b70aeec, type: 2}
+  - {fileID: 2100000, guid: 7cce38ba40b7d05439de10ddde5afaf6, type: 2}
+  - {fileID: 2100000, guid: dbb60b2bb65b31644bc927811d8150f0, type: 2}
+  - {fileID: 2100000, guid: 473a182fd4f82f7488ba8bc5c8f394db, type: 2}
+  - {fileID: 2100000, guid: 35e8a620b81fb9f41a6cc3f57c3cab38, type: 2}
+  - {fileID: 2100000, guid: a2fc21f36e7a78d41bcbc203d3abec08, type: 2}
+  - {fileID: 2100000, guid: 91ba25c5e9aad2e4d8693d1840f12d00, type: 2}
+  - {fileID: 2100000, guid: 1881dcc2b2e53244f86e1589ace55fd2, type: 2}
+  prefabUVRects: []
+  materialsAndUVRects:
+  - material: {fileID: 2100000, guid: 2d5c2d2ed7676c64dbbee553b8181859, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.49072266
+      y: 0.71728516
+      width: 0.123291016
+      height: 0.23388672
+    srcObjName: Building_OfficeStepped_Blue
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.002490908
+      y: 0.056881845
+      width: 0.98687446
+      height: 0.9374277
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.002490908
+      y: 0.056881845
+      width: 0.98687446
+      height: 0.9374277
+  - material: {fileID: 2100000, guid: a29f8f8f2c03b354eb6ac7674bc35868, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.49072266
+      y: 0.48242188
+      width: 0.123291016
+      height: 0.23388672
+    srcObjName: Building_OfficeLarge_Grey
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.002490908
+      y: 0.056881845
+      width: 0.98687446
+      height: 0.9374277
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.002490908
+      y: 0.056881845
+      width: 0.98687446
+      height: 0.9374277
+  - material: {fileID: 2100000, guid: 3033bc4da4cf4c64a902984a8b70aeec, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.49072266
+      y: 0.2475586
+      width: 0.123291016
+      height: 0.23388672
+    srcObjName: Building_OfficeMedium_Brown
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.002490908
+      y: 0.056881845
+      width: 0.98687446
+      height: 0.9374277
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.002490908
+      y: 0.056881845
+      width: 0.98687446
+      height: 0.9374277
+  - material: {fileID: 2100000, guid: 7cce38ba40b7d05439de10ddde5afaf6, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.00048828125
+      width: 0.24707031
+      height: 0.49609375
+    srcObjName: Building_AutoRepair
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.010078814
+      y: 0.0011500507
+      width: 0.98892766
+      height: 0.9929526
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.010078814
+      y: 0.0011500507
+      width: 0.98892766
+      height: 0.9929526
+  - material: {fileID: 2100000, guid: dbb60b2bb65b31644bc927811d8150f0, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.4975586
+      width: 0.24243164
+      height: 0.49853516
+    srcObjName: store_small_mesh
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.008173877
+      y: 0
+      width: 1.9411366
+      height: 1.9959607
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.008173877
+      y: 0
+      width: 1.9411366
+      height: 1.9959607
+  - material: {fileID: 2100000, guid: 473a182fd4f82f7488ba8bc5c8f394db, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.24780273
+      y: 0.5
+      width: 0.24243164
+      height: 0.49853516
+    srcObjName: store_small_mesh
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.008173877
+      y: 0
+      width: 1.9411366
+      height: 1.9959607
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.008173877
+      y: 0
+      width: 1.9411366
+      height: 1.9959607
+  - material: {fileID: 2100000, guid: 35e8a620b81fb9f41a6cc3f57c3cab38, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.82421875
+      y: 0.00048828125
+      width: 0.16625977
+      height: 0.24609375
+    srcObjName: Building_ApartmentLarge_Orange
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.03645095
+      y: -0.000014841557
+      width: 1.3307599
+      height: 0.9860841
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.03645095
+      y: -0.000014841557
+      width: 1.3307599
+      height: 0.9860841
+  - material: {fileID: 2100000, guid: a2fc21f36e7a78d41bcbc203d3abec08, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.24780273
+      y: 0.00048828125
+      width: 0.24243164
+      height: 0.49853516
+    srcObjName: store_small_mesh
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.008173877
+      y: 0
+      width: 1.9411366
+      height: 1.9959607
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.008173877
+      y: 0
+      width: 1.9411366
+      height: 1.9959607
+  - material: {fileID: 2100000, guid: 91ba25c5e9aad2e4d8693d1840f12d00, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.49072266
+      y: 0.00048828125
+      width: 0.16625977
+      height: 0.24609375
+    srcObjName: Building_ApartmentSmall_Red
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.03645095
+      y: -0.000014841557
+      width: 1.3307599
+      height: 0.9860841
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.03645095
+      y: -0.000014841557
+      width: 1.3307599
+      height: 0.9860841
+  - material: {fileID: 2100000, guid: 1881dcc2b2e53244f86e1589ace55fd2, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.6574707
+      y: 0.00048828125
+      width: 0.16625977
+      height: 0.24609375
+    srcObjName: Building_ApartmentLarge_Brown
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.03645095
+      y: -0.000014841557
+      width: 1.3307599
+      height: 0.9860841
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.03645095
+      y: -0.000014841557
+      width: 1.3307599
+      height: 0.9860841
+  resultMaterial: {fileID: 2100000, guid: d24a9914c6b17704da2df5c92edebd84, type: 2}
+  resultMaterials: []
+  doMultiMaterial: 0
+  fixOutOfBoundsUVs: 1

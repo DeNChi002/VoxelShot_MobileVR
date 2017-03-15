@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1011 &101100000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: sita
+  m_Mask: 01000000000000000000000001000000010000000000000000000000000000000000000001000000010000000000000000000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Root_jnt
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Body
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Prop_Backpack
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Prop_FireFighterPack
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/Head_jnt
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/Head_jnt/Hat_jnt
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/Head_jnt/Hat_jnt/GasMask
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/Head_jnt/Hat_jnt/Hair_Bobs
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/Head_jnt/Hat_jnt/Hair_Ponytail
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/Head_jnt/Hat_jnt/Hair_Punk
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/Head_jnt/Hat_jnt/Hair_Top
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/Head_jnt/Hat_jnt/Hat_Cap
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/Head_jnt/Hat_jnt/Hat_Cap_Backwards
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/Head_jnt/Hat_jnt/Hat_FireFighter
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/Head_jnt/Hat_jnt/Hat_Helmet
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/Head_jnt/Hat_jnt/Hat_Hobo
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/Head_jnt/Hat_jnt/Hat_Pimp
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/Head_jnt/Hat_jnt/Hat_Police
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/Head_jnt/Hat_jnt/Hat_Sheriff
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/Head_jnt/Hat_jnt/RiotHelmet
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/Head_jnt/Hat_jnt/WarHelmet
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/Head_jnt/Head
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/UpperArm_Left_jnt
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/UpperArm_Left_jnt/LowerArm_Left_jnt
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/UpperArm_Left_jnt/LowerArm_Left_jnt/Hand_Left_jnt
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/UpperArm_Left_jnt/LowerArm_Left_jnt/Hand_Left_jnt/Hand_Left
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/UpperArm_Left_jnt/LowerArm_Left_jnt/LowerArm_Left
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/UpperArm_Left_jnt/UpperArm_Left
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/UpperArm_Right_jnt
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/UpperArm_Right_jnt/LowerArm_Right_jnt
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/UpperArm_Right_jnt/LowerArm_Right_jnt/Hand_Right_jnt
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/UpperArm_Right_jnt/LowerArm_Right_jnt/Hand_Right_jnt/Hand_Right
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/UpperArm_Right_jnt/LowerArm_Right_jnt/LowerArm_Right
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/Body_jnt/Spine_jnt/UpperArm_Right_jnt/UpperArm_Right
+    m_Weight: 0
+  - m_Path: Root_jnt/Hips_jnt/LowerBody
+    m_Weight: 1
+  - m_Path: Root_jnt/Hips_jnt/UpperLeg_Left_jnt
+    m_Weight: 1
+  - m_Path: Root_jnt/Hips_jnt/UpperLeg_Left_jnt/LowerLeg_Left_jnt
+    m_Weight: 1
+  - m_Path: Root_jnt/Hips_jnt/UpperLeg_Left_jnt/LowerLeg_Left_jnt/Foot_Left_jnt
+    m_Weight: 1
+  - m_Path: Root_jnt/Hips_jnt/UpperLeg_Left_jnt/LowerLeg_Left_jnt/Foot_Left_jnt/Foot_Left
+    m_Weight: 1
+  - m_Path: Root_jnt/Hips_jnt/UpperLeg_Left_jnt/LowerLeg_Left_jnt/Foot_Left_jnt/Foot_Left_jnt1
+    m_Weight: 1
+  - m_Path: Root_jnt/Hips_jnt/UpperLeg_Left_jnt/LowerLeg_Left_jnt/LowerLeg_Left
+    m_Weight: 1
+  - m_Path: Root_jnt/Hips_jnt/UpperLeg_Left_jnt/UpperLeg_Left
+    m_Weight: 1
+  - m_Path: Root_jnt/Hips_jnt/UpperLeg_Right_jnt
+    m_Weight: 1
+  - m_Path: Root_jnt/Hips_jnt/UpperLeg_Right_jnt/LowerLeg_Right_jnt
+    m_Weight: 1
+  - m_Path: Root_jnt/Hips_jnt/UpperLeg_Right_jnt/LowerLeg_Right_jnt/Foot_Right_jnt
+    m_Weight: 1
+  - m_Path: Root_jnt/Hips_jnt/UpperLeg_Right_jnt/LowerLeg_Right_jnt/Foot_Right_jnt/Foot_Right
+    m_Weight: 1
+  - m_Path: Root_jnt/Hips_jnt/UpperLeg_Right_jnt/LowerLeg_Right_jnt/Foot_Right_jnt/Foot_Right_jnt1
+    m_Weight: 1
+  - m_Path: Root_jnt/Hips_jnt/UpperLeg_Right_jnt/LowerLeg_Right_jnt/LowerLeg_Right
+    m_Weight: 1
+  - m_Path: Root_jnt/Hips_jnt/UpperLeg_Right_jnt/UpperLeg_Right
+    m_Weight: 1

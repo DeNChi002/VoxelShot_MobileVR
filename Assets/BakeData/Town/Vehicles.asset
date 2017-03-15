@@ -1,0 +1,345 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d41887b1546f5c44ab54e7e65aad3bc, type: 3}
+  m_Name: Vehicles
+  m_EditorClassIdentifier: 
+  combinedMaterialInfo: []
+  materials:
+  - {fileID: 2100000, guid: d594dd5f97c95af43b577c3ace270413, type: 2}
+  - {fileID: 2100000, guid: 311745311fe655347a9d9a87c17237e2, type: 2}
+  - {fileID: 2100000, guid: 14f01ae7a86d50843aa6fce9ffb1242f, type: 2}
+  - {fileID: 2100000, guid: 31519c69ca7480a47a2e875057962981, type: 2}
+  - {fileID: 2100000, guid: 0f4a4a4748666ef45a016a969c20d6b5, type: 2}
+  - {fileID: 2100000, guid: 7cce38ba40b7d05439de10ddde5afaf6, type: 2}
+  - {fileID: 2100000, guid: 2d0aba1c7a1f1ad4e8c42037f8c582a7, type: 2}
+  - {fileID: 2100000, guid: 60bcfd51d8bfeba47b2012cc604195e3, type: 2}
+  - {fileID: 2100000, guid: 31d1c671c238c7840aad3992140c4bb3, type: 2}
+  - {fileID: 2100000, guid: 2f1eaa18358c5a740b06ca4f0f63168f, type: 2}
+  - {fileID: 2100000, guid: 69c95aa252bd9cd4e928b727e8fa1132, type: 2}
+  - {fileID: 2100000, guid: 57086422479816a4099108803b0a1ef8, type: 2}
+  prefabUVRects: []
+  materialsAndUVRects:
+  - material: {fileID: 2100000, guid: d594dd5f97c95af43b577c3ace270413, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.24365234
+      y: 0.7246094
+      width: 0.23876953
+      height: 0.23925781
+    srcObjName: car_seperate_blue
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.017704861
+      y: 0.019138437
+      width: 0.9563328
+      height: 0.95760024
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.017704861
+      y: 0.019138437
+      width: 0.9563328
+      height: 0.95760024
+  - material: {fileID: 2100000, guid: 311745311fe655347a9d9a87c17237e2, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.73095703
+      y: 0.24121094
+      width: 0.23876953
+      height: 0.23925781
+    srcObjName: car_seperate_green
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.017704861
+      y: 0.019138437
+      width: 0.9563328
+      height: 0.95760024
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.017704861
+      y: 0.019138437
+      width: 0.9563328
+      height: 0.95760024
+  - material: {fileID: 2100000, guid: 14f01ae7a86d50843aa6fce9ffb1242f, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.24365234
+      y: 0.24121094
+      width: 0.24316406
+      height: 0.2421875
+    srcObjName: ambo_seperate
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.02373787
+      y: 0.019022558
+      width: 0.97292966
+      height: 0.96996427
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.02373787
+      y: 0.019022558
+      width: 0.97292966
+      height: 0.96996427
+  - material: {fileID: 2100000, guid: 31519c69ca7480a47a2e875057962981, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.24365234
+      y: 0.484375
+      width: 0.23876953
+      height: 0.23925781
+    srcObjName: car_seperate_red
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.017704861
+      y: 0.019138437
+      width: 0.9563328
+      height: 0.95760024
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.017704861
+      y: 0.019138437
+      width: 0.9563328
+      height: 0.95760024
+  - material: {fileID: 2100000, guid: 0f4a4a4748666ef45a016a969c20d6b5, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00048828125
+      y: 0.67529297
+      width: 0.2421875
+      height: 0.24023438
+    srcObjName: van_seperate_green
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.02373787
+      y: 0.02501054
+      width: 0.9690262
+      height: 0.96203935
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.02373787
+      y: 0.02501054
+      width: 0.9690262
+      height: 0.96203935
+  - material: {fileID: 2100000, guid: 7cce38ba40b7d05439de10ddde5afaf6, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.48339844
+      y: 0.484375
+      width: 0.14160156
+      height: 0.21142578
+    srcObjName: Vehicle_Boat_02
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.13734387
+      y: 0.05767843
+      width: 0.28400046
+      height: 0.42357245
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.13734387
+      y: 0.05767843
+      width: 0.28400046
+      height: 0.42357245
+  - material: {fileID: 2100000, guid: 2d0aba1c7a1f1ad4e8c42037f8c582a7, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.24365234
+      y: 0.00048828125
+      width: 0.24853516
+      height: 0.2397461
+    srcObjName: bus_seperate_brown
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.00070524216
+      y: 0.025780797
+      width: 0.99601597
+      height: 0.9597511
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00070524216
+      y: 0.025780797
+      width: 0.99601597
+      height: 0.9597511
+  - material: {fileID: 2100000, guid: 60bcfd51d8bfeba47b2012cc604195e3, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.49316406
+      y: 0.00048828125
+      width: 0.2421875
+      height: 0.2397461
+    srcObjName: ute_seperate_yellow
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.010936797
+      y: 0.016179278
+      width: 0.96886516
+      height: 0.9600634
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.010936797
+      y: 0.016179278
+      width: 0.96886516
+      height: 0.9600634
+  - material: {fileID: 2100000, guid: 31d1c671c238c7840aad3992140c4bb3, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.7363281
+      y: 0.00048828125
+      width: 0.2421875
+      height: 0.2397461
+    srcObjName: ute_seperate_red
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.010936797
+      y: 0.016179278
+      width: 0.96886516
+      height: 0.9600634
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.010936797
+      y: 0.016179278
+      width: 0.96886516
+      height: 0.9600634
+  - material: {fileID: 2100000, guid: 2f1eaa18358c5a740b06ca4f0f63168f, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.48779297
+      y: 0.24121094
+      width: 0.2421875
+      height: 0.24023438
+    srcObjName: van_seperate_red
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.02373787
+      y: 0.02501054
+      width: 0.9690262
+      height: 0.96203935
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.02373787
+      y: 0.02501054
+      width: 0.9690262
+      height: 0.96203935
+  - material: {fileID: 2100000, guid: 69c95aa252bd9cd4e928b727e8fa1132, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00048828125
+      y: 0.4296875
+      width: 0.24072266
+      height: 0.2446289
+    srcObjName: fire_truck_seperate_mesh (1)
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.02373787
+      y: 0.007488936
+      width: 0.9632422
+      height: 0.979561
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.02373787
+      y: 0.007488936
+      width: 0.9632422
+      height: 0.979561
+  - material: {fileID: 2100000, guid: 57086422479816a4099108803b0a1ef8, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00048828125
+      y: 0.00048828125
+      width: 0.2421875
+      height: 0.42822266
+    srcObjName: taxi_seperate_mesh
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.019170165
+      y: 0.013167962
+      width: 0.97017336
+      height: 1.7147619
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.019170165
+      y: 0.013167962
+      width: 0.97017336
+      height: 1.7147619
+  resultMaterial: {fileID: 2100000, guid: 8965052ac20096c4e98ed1614ff01681, type: 2}
+  resultMaterials: []
+  doMultiMaterial: 0
+  fixOutOfBoundsUVs: 1

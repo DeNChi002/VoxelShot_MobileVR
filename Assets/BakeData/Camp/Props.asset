@@ -1,0 +1,291 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d41887b1546f5c44ab54e7e65aad3bc, type: 3}
+  m_Name: Props
+  m_EditorClassIdentifier: 
+  combinedMaterialInfo: []
+  materials:
+  - {fileID: 2100000, guid: 31ccb36154d6a9e46bde2271afad6291, type: 2}
+  - {fileID: 2100000, guid: 9ef609266b3a75041a923df5afd37d8e, type: 2}
+  - {fileID: 2100000, guid: f775052f85a7c01489efcbe31fbc54b9, type: 2}
+  - {fileID: 2100000, guid: d62699ac1849356458381983d23c881c, type: 2}
+  - {fileID: 2100000, guid: 005f2f09f8a1bb4478417218dc1d2648, type: 2}
+  - {fileID: 2100000, guid: d6956844756e1dc4790546fbd9fcf416, type: 2}
+  - {fileID: 2100000, guid: 19cf0262a2045f64bbb59bc14822f9c9, type: 2}
+  - {fileID: 2100000, guid: 8cb6784b8e51dc44ebb6ba9bd5670e7b, type: 2}
+  - {fileID: 2100000, guid: f8b97b32345123a4f83769b95a2e9927, type: 2}
+  - {fileID: 2100000, guid: 30976d4c29467f7429494561af5cea6b, type: 2}
+  prefabUVRects: []
+  materialsAndUVRects:
+  - material: {fileID: 2100000, guid: 31ccb36154d6a9e46bde2271afad6291, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.2512207
+      y: 0.00048828125
+      width: 0.125
+      height: 0.25
+    srcObjName: rock_brown_03
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+  - material: {fileID: 2100000, guid: 9ef609266b3a75041a923df5afd37d8e, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.12573242
+      y: 0.5024414
+      width: 0.125
+      height: 0.25
+    srcObjName: tank_stop
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+  - material: {fileID: 2100000, guid: f775052f85a7c01489efcbe31fbc54b9, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.2512207
+      y: 0.25146484
+      width: 0.125
+      height: 0.25
+    srcObjName: rubble_02
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+  - material: {fileID: 2100000, guid: d62699ac1849356458381983d23c881c, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.37670898
+      y: 0.00048828125
+      width: 0.125
+      height: 0.25
+    srcObjName: crate_02
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+  - material: {fileID: 2100000, guid: 005f2f09f8a1bb4478417218dc1d2648, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.2512207
+      y: 0.5024414
+      width: 0.125
+      height: 0.25
+    srcObjName: wall_damaged_01
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+  - material: {fileID: 2100000, guid: d6956844756e1dc4790546fbd9fcf416, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.25146484
+      width: 0.125
+      height: 0.25
+    srcObjName: palm_02
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+  - material: {fileID: 2100000, guid: 19cf0262a2045f64bbb59bc14822f9c9, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.00048828125
+      width: 0.125
+      height: 0.25
+    srcObjName: power_pole
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+  - material: {fileID: 2100000, guid: 8cb6784b8e51dc44ebb6ba9bd5670e7b, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.5024414
+      width: 0.125
+      height: 0.25
+    srcObjName: tire_pile
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+  - material: {fileID: 2100000, guid: f8b97b32345123a4f83769b95a2e9927, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.12573242
+      y: 0.25146484
+      width: 0.125
+      height: 0.25
+    srcObjName: store_damaged_01_a
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+  - material: {fileID: 2100000, guid: 30976d4c29467f7429494561af5cea6b, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.12573242
+      y: 0.00048828125
+      width: 0.125
+      height: 0.25
+    srcObjName: fuel_tank_large
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+  resultMaterial: {fileID: 2100000, guid: 90ab3fe10abcc456a8cea7b05ea64201, type: 2}
+  resultMaterials: []
+  doMultiMaterial: 0
+  fixOutOfBoundsUVs: 0

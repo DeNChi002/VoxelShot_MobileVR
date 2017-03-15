@@ -1,0 +1,345 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d41887b1546f5c44ab54e7e65aad3bc, type: 3}
+  m_Name: Map
+  m_EditorClassIdentifier: 
+  combinedMaterialInfo: []
+  materials:
+  - {fileID: 2100000, guid: 58db0f187815f634c86927ef5bf1e73f, type: 2}
+  - {fileID: 2100000, guid: 65bc977ba7cd6a341b116b2cda14e86c, type: 2}
+  - {fileID: 2100000, guid: 9c6bf2fc51b62514a819aef97a1fe26c, type: 2}
+  - {fileID: 2100000, guid: fb672db2ef591bc43897ebd1930097bd, type: 2}
+  - {fileID: 2100000, guid: 3d637bd49be4bee4d8668e9578e4e50d, type: 2}
+  - {fileID: 2100000, guid: 9ef609266b3a75041a923df5afd37d8e, type: 2}
+  - {fileID: 2100000, guid: f9063a172dec5824f87a148932421f2d, type: 2}
+  - {fileID: 2100000, guid: f9063a172dec5824f87a148932421f2d, type: 2}
+  - {fileID: 2100000, guid: 935814872add8dd47b26fb757083609e, type: 2}
+  - {fileID: 2100000, guid: 61fdab2438a915544b92b73275540836, type: 2}
+  - {fileID: 2100000, guid: ec30f86423fb94145bc622986e32900e, type: 2}
+  - {fileID: 2100000, guid: f8b97b32345123a4f83769b95a2e9927, type: 2}
+  prefabUVRects: []
+  materialsAndUVRects:
+  - material: {fileID: 2100000, guid: 58db0f187815f634c86927ef5bf1e73f, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00048828125
+      y: 0.71728516
+      width: 0.24365234
+      height: 0.23291016
+    srcObjName: heli_pad
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.0078647435
+      y: 0.047187805
+      width: 0.9759376
+      height: 0.93247026
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0078647435
+      y: 0.047187805
+      width: 0.9759376
+      height: 0.93247026
+  - material: {fileID: 2100000, guid: 65bc977ba7cd6a341b116b2cda14e86c, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.2548828
+      y: 0.25
+      width: 0.24804688
+      height: 0.21484375
+    srcObjName: dirt_box_01
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.0051300228
+      y: 0.13310039
+      width: 0.9925343
+      height: 0.8602457
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0051300228
+      y: 0.13310039
+      width: 0.9925343
+      height: 0.8602457
+  - material: {fileID: 2100000, guid: 9c6bf2fc51b62514a819aef97a1fe26c, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.74658203
+      y: 0.00048828125
+      width: 0.2421875
+      height: 0.24511719
+    srcObjName: road_Asphalt_Short
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.010150254
+      y: 0.501405
+      width: 0.97009814
+      height: 0.48538798
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.010150254
+      y: 0.006092683
+      width: 0.97009814
+      height: 0.9807003
+  - material: {fileID: 2100000, guid: fb672db2ef591bc43897ebd1930097bd, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00048828125
+      y: 0.9511719
+      width: 0.020019531
+      height: 0.020019531
+    srcObjName: ground_Dirt
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.09740694
+      y: 0.58603144
+      width: 0.08019179
+      height: 0.08019209
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.09740694
+      y: 0.58603144
+      width: 0.08019179
+      height: 0.08019209
+  - material: {fileID: 2100000, guid: 3d637bd49be4bee4d8668e9578e4e50d, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00048828125
+      y: 0.47998047
+      width: 0.2446289
+      height: 0.23632812
+    srcObjName: GuardTower
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.037961543
+      y: 0.044239454
+      width: 0.9795291
+      height: 0.94556075
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.037961543
+      y: 0.044239454
+      width: 0.9795291
+      height: 0.94556075
+  - material: {fileID: 2100000, guid: 9ef609266b3a75041a923df5afd37d8e, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.2548828
+      y: 0.4658203
+      width: 0.10595703
+      height: 0.21533203
+    srcObjName: wall_02
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.036587417
+      y: 0.08603829
+      width: 0.42389253
+      height: 0.8620333
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.036587417
+      y: 0.08603829
+      width: 0.42389253
+      height: 0.8620333
+  - material: {fileID: 2100000, guid: f9063a172dec5824f87a148932421f2d, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.25097656
+      y: 0.2475586
+      width: 0.12451172
+      height: 0.0009765625
+    srcObjName: Prop_Airport_Cabnet
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.110612065
+      y: 0.4783357
+      width: 0.24979949
+      height: 0
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.110612065
+      y: 0.4783357
+      width: 0.24979949
+      height: 0
+  - material: {fileID: 2100000, guid: f9063a172dec5824f87a148932421f2d, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.50390625
+      y: 0.25
+      width: 0.114746094
+      height: 0.15478516
+    srcObjName: Barrel_03 (1)
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.16496217
+      y: 0.1705369
+      width: 0.22991768
+      height: 0.310394
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.16496217
+      y: 0.1705369
+      width: 0.22991768
+      height: 0.310394
+  - material: {fileID: 2100000, guid: 935814872add8dd47b26fb757083609e, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00048828125
+      y: 0.25
+      width: 0.25341797
+      height: 0.2290039
+    srcObjName: tent_01
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.119270205
+      y: 0.037538707
+      width: 1.0154366
+      height: 0.9171608
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.119270205
+      y: 0.037538707
+      width: 1.0154366
+      height: 0.9171608
+  - material: {fileID: 2100000, guid: 61fdab2438a915544b92b73275540836, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.5024414
+      y: 0.00048828125
+      width: 0.24316406
+      height: 0.24414062
+    srcObjName: building_02
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.00881923
+      y: 0.0046794564
+      width: 0.9738031
+      height: 0.9781691
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.00881923
+      y: 0.0046794564
+      width: 0.9738031
+      height: 0.9781691
+  - material: {fileID: 2100000, guid: ec30f86423fb94145bc622986e32900e, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.25097656
+      y: 0.00048828125
+      width: 0.25048828
+      height: 0.24609375
+    srcObjName: GuardTower
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.037961543
+      y: 0.044239454
+      width: 0.9795291
+      height: 0.94556075
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.01451087
+      y: 0.004887283
+      width: 1.0029798
+      height: 0.98491293
+  - material: {fileID: 2100000, guid: f8b97b32345123a4f83769b95a2e9927, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00048828125
+      y: 0.00048828125
+      width: 0.24951172
+      height: 0.24853516
+    srcObjName: store_damaged_01_b
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0.99999994
+      height: 0.9959607
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0.99999994
+      height: 0.9959607
+  resultMaterial: {fileID: 2100000, guid: 6b152d78ae2e67c44a80cafcb06d8410, type: 2}
+  resultMaterials: []
+  doMultiMaterial: 0
+  fixOutOfBoundsUVs: 1

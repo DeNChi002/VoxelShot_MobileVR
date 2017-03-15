@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d41887b1546f5c44ab54e7e65aad3bc, type: 3}
+  m_Name: Road
+  m_EditorClassIdentifier: 
+  combinedMaterialInfo: []
+  materials:
+  - {fileID: 2100000, guid: 1fd6e614640236b45bb310cd7610a657, type: 2}
+  - {fileID: 2100000, guid: 3e979b3745b4a024bbbd5806d425fa75, type: 2}
+  - {fileID: 2100000, guid: 7cce38ba40b7d05439de10ddde5afaf6, type: 2}
+  - {fileID: 2100000, guid: 7cce38ba40b7d05439de10ddde5afaf6, type: 2}
+  - {fileID: 2100000, guid: 2191478c1f641c245b4fe9449817a0b7, type: 2}
+  prefabUVRects: []
+  materialsAndUVRects:
+  - material: {fileID: 2100000, guid: 1fd6e614640236b45bb310cd7610a657, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00048828125
+      y: 0.60058594
+      width: 0.12988281
+      height: 0.14746094
+    srcObjName: fence_short_spike
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.054664217
+      y: 0.04945898
+      width: 0.5200409
+      height: 0.295843
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.054664217
+      y: 0.04945898
+      width: 0.5200409
+      height: 0.295843
+  - material: {fileID: 2100000, guid: 3e979b3745b4a024bbbd5806d425fa75, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.48828125
+      y: 0.50390625
+      width: 0.06640625
+      height: 0.4013672
+    srcObjName: flower_mesh
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.29688412
+      y: 0.033193886
+      width: 0.265724
+      height: 0.80362236
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.29688412
+      y: 0.033193886
+      width: 0.265724
+      height: 0.80362236
+  - material: {fileID: 2100000, guid: 7cce38ba40b7d05439de10ddde5afaf6, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00048828125
+      y: 0.75
+      width: 0.0009765625
+      height: 0.001953125
+    srcObjName: Env_Water_Tile
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.39528757
+      y: 0.3302606
+      width: 0
+      height: 0
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.39528757
+      y: 0.3302606
+      width: 0
+      height: 0
+  - material: {fileID: 2100000, guid: 7cce38ba40b7d05439de10ddde5afaf6, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00048828125
+      y: 0.0009765625
+      width: 0.4868164
+      height: 0.59765625
+    srcObjName: Building_House_02
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.11254577
+      y: 0.06163795
+      width: 0.3049695
+      height: 0.4267601
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.018706443
+      y: 0.056648195
+      width: 0.9736969
+      height: 0.5976682
+  - material: {fileID: 2100000, guid: 2191478c1f641c245b4fe9449817a0b7, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.48828125
+      y: 0.0009765625
+      width: 0.24804688
+      height: 0.50097656
+    srcObjName: road_straight_mesh
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.010150254
+      y: 0.26579517
+      width: 0.70043373
+      height: 0.7261765
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: -0.000000059604645
+      y: -0.0037351698
+      width: 0.993029
+      height: 1.0037352
+  resultMaterial: {fileID: 2100000, guid: c8c1c08cc7c31be4a8711dccaacb7a3b, type: 2}
+  resultMaterials: []
+  doMultiMaterial: 0
+  fixOutOfBoundsUVs: 1

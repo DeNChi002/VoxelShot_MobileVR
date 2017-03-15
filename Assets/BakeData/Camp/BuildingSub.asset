@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d41887b1546f5c44ab54e7e65aad3bc, type: 3}
+  m_Name: BuildingSub
+  m_EditorClassIdentifier: 
+  combinedMaterialInfo: []
+  materials:
+  - {fileID: 2100000, guid: 935814872add8dd47b26fb757083609e, type: 2}
+  - {fileID: 2100000, guid: f775052f85a7c01489efcbe31fbc54b9, type: 2}
+  prefabUVRects: []
+  materialsAndUVRects:
+  - material: {fileID: 2100000, guid: 935814872add8dd47b26fb757083609e, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.0009765625
+      y: 0.4951172
+      width: 0.50683594
+      height: 0.4580078
+    srcObjName: tent_01 (27)
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.119270205
+      y: 0.037538707
+      width: 1.0154366
+      height: 0.9171608
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.119270205
+      y: 0.037538707
+      width: 1.0154366
+      height: 0.9171608
+  - material: {fileID: 2100000, guid: f775052f85a7c01489efcbe31fbc54b9, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.0009765625
+      y: 0.0009765625
+      width: 0.67871094
+      height: 0.4921875
+    srcObjName: apartment_damaged_02_a
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.009227753
+      y: -0.000014841557
+      width: 1.3579831
+      height: 0.9860841
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.009227753
+      y: -0.000014841557
+      width: 1.3579831
+      height: 0.9860841
+  resultMaterial: {fileID: 2100000, guid: bb22120da9f2847a99428f63ee81e158, type: 2}
+  resultMaterials: []
+  doMultiMaterial: 0
+  fixOutOfBoundsUVs: 1

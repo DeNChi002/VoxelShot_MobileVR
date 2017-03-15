@@ -1,0 +1,183 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d41887b1546f5c44ab54e7e65aad3bc, type: 3}
+  m_Name: Props
+  m_EditorClassIdentifier: 
+  combinedMaterialInfo: []
+  materials:
+  - {fileID: 2100000, guid: 368fc3419e8bed246ae940f068c776bf, type: 2}
+  - {fileID: 2100000, guid: 3e979b3745b4a024bbbd5806d425fa75, type: 2}
+  - {fileID: 2100000, guid: b1b815268ecf4b142b55c74c55d25872, type: 2}
+  - {fileID: 2100000, guid: 83df962484e785f438feef86157b6e99, type: 2}
+  - {fileID: 2100000, guid: 7cce38ba40b7d05439de10ddde5afaf6, type: 2}
+  - {fileID: 2100000, guid: 7cce38ba40b7d05439de10ddde5afaf6, type: 2}
+  prefabUVRects: []
+  materialsAndUVRects:
+  - material: {fileID: 2100000, guid: 368fc3419e8bed246ae940f068c776bf, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.7480469
+      y: 0.0009765625
+      width: 0.24121094
+      height: 0.171875
+    srcObjName: dumpster_mesh
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.02468694
+      y: 0.018539231
+      width: 0.9655143
+      height: 0.6888792
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.02468694
+      y: 0.018539231
+      width: 0.9655143
+      height: 0.6888792
+  - material: {fileID: 2100000, guid: 3e979b3745b4a024bbbd5806d425fa75, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.44335938
+      y: 0.0009765625
+      width: 0.30273438
+      height: 0.3642578
+    srcObjName: hydrant_mesh
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.0066786
+      y: 0.5098663
+      width: 0.09935896
+      height: 0.3408482
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.0066786
+      y: 0.12061918
+      width: 0.606183
+      height: 0.7300953
+  - material: {fileID: 2100000, guid: b1b815268ecf4b142b55c74c55d25872, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.22265625
+      y: 0.67089844
+      width: 0.20996094
+      height: 0.18457031
+    srcObjName: road_divider_mesh
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.14307666
+      y: 0.0033377975
+      width: 0.84210604
+      height: 0.73908806
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.14307666
+      y: 0.0033377975
+      width: 0.84210604
+      height: 0.73908806
+  - material: {fileID: 2100000, guid: 83df962484e785f438feef86157b6e99, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.0009765625
+      y: 0.67089844
+      width: 0.21972656
+      height: 0.20605469
+    srcObjName: tree_large_mesh
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.056278553
+      y: 0.07438137
+      width: 0.8822685
+      height: 0.8248256
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.056278553
+      y: 0.07438137
+      width: 0.8822685
+      height: 0.8248256
+  - material: {fileID: 2100000, guid: 7cce38ba40b7d05439de10ddde5afaf6, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.0009765625
+      y: 0.87890625
+      width: 0.09082031
+      height: 0.091796875
+    srcObjName: Prop_TirePile
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.54629093
+      y: 0.40342122
+      width: 0.09170169
+      height: 0.09207624
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.54629093
+      y: 0.40342122
+      width: 0.09170169
+      height: 0.09207624
+  - material: {fileID: 2100000, guid: 7cce38ba40b7d05439de10ddde5afaf6, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.0009765625
+      y: 0.0009765625
+      width: 0.4404297
+      height: 0.66796875
+    srcObjName: Prop_Umbrella_03
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0.19669709
+      y: 0.21874605
+      width: 0.21448648
+      height: 0.26310188
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0.04334692
+      y: 0.05966723
+      width: 0.4407362
+      height: 0.668116
+  resultMaterial: {fileID: 2100000, guid: a7879e87e1796c846ad0c1f749a22fae, type: 2}
+  resultMaterials: []
+  doMultiMaterial: 0
+  fixOutOfBoundsUVs: 1

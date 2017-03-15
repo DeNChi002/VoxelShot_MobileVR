@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d41887b1546f5c44ab54e7e65aad3bc, type: 3}
+  m_Name: Ground
+  m_EditorClassIdentifier: 
+  combinedMaterialInfo: []
+  materials:
+  - {fileID: 2100000, guid: 9ef609266b3a75041a923df5afd37d8e, type: 2}
+  - {fileID: 2100000, guid: feaf891b6c200e248925d4744e46daca, type: 2}
+  - {fileID: 2100000, guid: fb672db2ef591bc43897ebd1930097bd, type: 2}
+  - {fileID: 2100000, guid: 9c6bf2fc51b62514a819aef97a1fe26c, type: 2}
+  - {fileID: 2100000, guid: 65bc977ba7cd6a341b116b2cda14e86c, type: 2}
+  prefabUVRects: []
+  materialsAndUVRects:
+  - material: {fileID: 2100000, guid: 9ef609266b3a75041a923df5afd37d8e, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00048828125
+      y: 0.25146484
+      width: 0.25
+      height: 0.25
+    srcObjName: wall_02
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+  - material: {fileID: 2100000, guid: feaf891b6c200e248925d4744e46daca, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00048828125
+      y: 0.5024414
+      width: 0.25
+      height: 0.25
+    srcObjName: road_straight_mesh
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+  - material: {fileID: 2100000, guid: fb672db2ef591bc43897ebd1930097bd, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.5024414
+      y: 0.00048828125
+      width: 0.25
+      height: 0.25
+    srcObjName: road_Dirt_Long
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+  - material: {fileID: 2100000, guid: 9c6bf2fc51b62514a819aef97a1fe26c, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00048828125
+      y: 0.00048828125
+      width: 0.25
+      height: 0.25
+    srcObjName: road_Asphalt_Dirt_Transition
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+  - material: {fileID: 2100000, guid: 65bc977ba7cd6a341b116b2cda14e86c, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.25146484
+      y: 0.00048828125
+      width: 0.25
+      height: 0.25
+    srcObjName: dirt_box_01
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+  resultMaterial: {fileID: 2100000, guid: a9dda2447db3142318c5a2af9847783f, type: 2}
+  resultMaterials: []
+  doMultiMaterial: 0
+  fixOutOfBoundsUVs: 0
