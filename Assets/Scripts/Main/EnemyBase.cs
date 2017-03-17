@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//　変更箇所
+//　NavMeshAgentを廃止。代わりに座標を指定してLerpで動かすものを実装
+
 /// <summary>
 /// 敵基本クラス
 /// </summary>
@@ -11,6 +14,7 @@ public class EnemyBase : MonoBehaviorExpansion, IDamageable<int>, IRegionSettabl
 
 	// 歩行時ボイス再生判定間隔
 	static readonly float VOICE_INTERVAL_WALK = 5.0f;
+
 	// 歩行時ボイス判定有効距離（対プレイヤー位置）
 	static readonly float VOICE_CHECK_DISTANCE = 15.0f;
 
@@ -38,8 +42,8 @@ public class EnemyBase : MonoBehaviorExpansion, IDamageable<int>, IRegionSettabl
 	[SerializeField] // 差分マテリアル
 	protected Material[] arrayChangeMat;
 
-	[SerializeField]
-	protected UnityEngine.AI.NavMeshAgent agent;
+	//[SerializeField]
+	//protected UnityEngine.AI.NavMeshAgent agent;
 
 	[SerializeField]
 	protected Animator animator;
@@ -51,13 +55,14 @@ public class EnemyBase : MonoBehaviorExpansion, IDamageable<int>, IRegionSettabl
 	Rigidbody hitColliderRigid;
 
 	// 移動先
-	Transform moveTarget;
+	//Transform moveTarget;
 
 	// ボーナススコア設定値
 	protected int bonusScore;
 
 	// 最終ダメージ部位
 	protected Region.TYPE regionType = Region.TYPE.NONE;
+
 	// ダメージ発生源位置
 	protected Vector3 damageGenPos;
 	protected float damageGenPower;
@@ -95,8 +100,24 @@ public class EnemyBase : MonoBehaviorExpansion, IDamageable<int>, IRegionSettabl
 	// 攻撃間隔
 	float attackInterval;
 
-	// 初期化種別
-	public enum InitType {
+    //--------以下追加項目--------
+    //目標地点の配列
+    Transform[] MoveTarget;
+
+    [SerializeField, Header("移動速度"), Range(0, 10)]
+    float MoveSpeed;
+
+    GameObject target;
+
+    //移動が終わったかどうかのブール
+    bool MoveFinish = false;
+
+    float starttime;
+
+    //--------ここまで新規で追加------------
+
+    // 初期化種別
+    public enum InitType {
 		NORMAL	= 0,
 		SCALE_Y = 1,
 	};
@@ -110,12 +131,20 @@ public class EnemyBase : MonoBehaviorExpansion, IDamageable<int>, IRegionSettabl
 	/// <summary>
 	/// 出現時データ設定
 	/// </summary>
-	public void SetPopData( Transform _moveTarget, int _bonusScore, bool _isAttacker )
+	public void SetPopData(Transform _moveTarget, int _bonusScore, bool _isAttacker )
 	{
-		moveTarget = _moveTarget;
+		//move = _moveTarget;
 		bonusScore = _bonusScore;
 		isAttacker = _isAttacker;
 	}
+
+    /// <summary>
+    /// 目標地点の座標設定
+    /// </summary>
+    public void SetMoveTarget(Transform[] _movePoint)
+    {
+        MoveTarget = _movePoint;
+    }
 
 	/// <summary>
 	/// 損傷ダメージ
@@ -130,33 +159,34 @@ public class EnemyBase : MonoBehaviorExpansion, IDamageable<int>, IRegionSettabl
 		}
 		else
 		{
-			if (agent.enabled)
-			{
-				//agent.Stop();
-				//animator.speed = 0.0f;
-				//transform.Rotate(new Vector3(0.0f, Random.Range(-5.0f, 5.0f), 0.0f));
+            if (!isDamageAnim)
+            {
+                animator.SetTrigger("KnockbackTop");
+                animator.SetTrigger("KnockbackBottom");
 
-				if (!isDamageAnim)
-				{
-					animator.SetTrigger("KnockbackTop");
-					animator.SetTrigger("KnockbackBottom");
+                isDamageAnim = true;
 
-					isDamageAnim = true;
+                WaitAfter(0.1f, () =>
+                {
+                    if (hp > 0)
+                    {
+                        //agent.Resume();
+                        //animator.speed = 1.0f;
+                    }
 
-					WaitAfter(0.1f, () =>
-					{
-						if (hp > 0)
-						{
-							//agent.Resume();
-							//animator.speed = 1.0f;
-						}
+                    isDamageAnim = false;
+                });
+            }
+            //         if (agent.enabled)
+            //{
+            //	//agent.Stop();
+            //	//animator.speed = 0.0f;
+            //	//transform.Rotate(new Vector3(0.0f, Random.Range(-5.0f, 5.0f), 0.0f));
 
-						isDamageAnim = false;
-					});
-				}
-			}
-		}
-	}
+
+            //}
+        }
+    }
 
 	public void SetRegionType(Region.TYPE _type)
 	{
@@ -210,7 +240,14 @@ public class EnemyBase : MonoBehaviorExpansion, IDamageable<int>, IRegionSettabl
 		VR_AudioManager.Instance.PlaySE(VOICE_DEAD_LIST[Random.Range(0, VOICE_DEAD_LIST.Length)], transform.position, 10.0f, 2.0f);
 
 		animator.enabled = false;
-        agent.enabled = false;
+
+        //移動をさせなくする
+        MoveFinish = true;
+
+        //LookAT用のターゲットを削除する
+        Destroy(target);
+
+        //agent.enabled = false;
 
         foreach (Rigidbody rigid in transform.GetComponentsInChildren<Rigidbody>())
         {
@@ -281,11 +318,11 @@ public class EnemyBase : MonoBehaviorExpansion, IDamageable<int>, IRegionSettabl
 	void Start()
 	{
         //NavMeshAgentに目標座標を代入
-		agent.destination = moveTarget.position;
+		//agent.destination = moveTarget.position;
 
 		thisRenderer.material = arrayChangeMat[Random.Range(0, arrayChangeMat.Length)];
 
-		StartCoroutine(MoveNormalSpeed(agent));
+		//StartCoroutine(MoveNormalSpeed(agent));
 
         //Rigidbodyを取得
 		Rigidbody[] arrayRigid = transform.GetComponentsInChildren<Rigidbody>();
@@ -313,11 +350,11 @@ public class EnemyBase : MonoBehaviorExpansion, IDamageable<int>, IRegionSettabl
 
 		voiceCheckTime = VOICE_INTERVAL_WALK * Random.Range(0.8f, 1.2f);
 
-		if (isDontMove)
-		{
-			agent.Stop();
-			agent.enabled = false;
-		}
+		//if (isDontMove)
+		//{
+		//	agent.Stop();
+		//	agent.enabled = false;
+		//}
 
         //敵の方向はプレイヤーカメラの方を見続けるようにする
 		transform.LookAt(ControllerManager.Instance.EyeCameraObj.transform);
@@ -337,7 +374,20 @@ public class EnemyBase : MonoBehaviorExpansion, IDamageable<int>, IRegionSettabl
 				VR_AudioManager.Instance.PlaySE(AUDIO_NAME.SE_CHAINSAW_LOOP, transform.position, 3.0f, 1.0f, gameObject, true, true);
 				break;
 		}
-	}
+
+        //------以下追加項目----------
+        starttime = Time.timeSinceLevelLoad;
+
+        //Debug.Log(starttime);
+
+        target = new GameObject("target");
+
+        target.transform.position = MoveTarget[0].position;
+
+        StartCoroutine(EnemyMoving());
+        //------ここまで新規で追加--------------
+
+    }
 
     //NavMeshAgentの動作
 	IEnumerator MoveNormalSpeed(UnityEngine.AI.NavMeshAgent agent)
@@ -381,53 +431,125 @@ public class EnemyBase : MonoBehaviorExpansion, IDamageable<int>, IRegionSettabl
 		}
 	}
 
-	void Update()
+    //-----以下追加項目--------------
+    IEnumerator EnemyMoving()
+    {
+        //配列番号
+        int arrayindex = 0;
+
+        for (int i = 0; i < MoveTarget.Length; i++)
+        {
+            //目標地点までの距離
+            float distance = 0.0f;
+
+            starttime = Time.timeSinceLevelLoad;
+
+            while (true)
+            {
+                //敵が死亡している場合は移動させない
+                if (MoveFinish)
+                {
+                    break;
+                }
+
+                float diff = Time.timeSinceLevelLoad - starttime;
+
+                //Debug.Log("Time" + Time.timeSinceLevelLoad);
+
+                float rate = diff / MoveSpeed;
+
+                //Debug.Log(rate);
+
+                //Debug.Log("目標地点" + MoveTarget[arrayindex].name + "に移動中");
+
+                target.transform.position = Vector3.Lerp(target.transform.position, MoveTarget[arrayindex].position, rate * Time.deltaTime * 2);
+
+                //目標地点に到達するまで移動させる
+                transform.position = Vector3.Lerp(transform.position, MoveTarget[arrayindex].position, rate * Time.deltaTime);
+
+                //目標地点までの距離を計算する
+                distance = Vector3.Distance(transform.position, MoveTarget[arrayindex].position);
+
+                if (distance <= 0.5f)
+                {
+                    break;
+                }
+
+                yield return null;
+            }
+
+            //次の目標地点に移動させる
+            arrayindex++;
+        }
+
+        Destroy(target);
+        MoveFinish = true;
+
+        //Debug.Log("移動終了。攻撃開始!");
+    }
+    //------ここまで新規で追加-------------------
+
+    void Update()
 	{
 		CheckWalkVoice();
 
-		//if (Input.GetKeyDown(KeyCode.D))
-		//{
-		//	Damage(1);
-		//}
+        //-----以下追加項目-----------
+        //最終目標地点まで移動が終わっていない場合
+        if (!MoveFinish)
+        {
+            transform.LookAt(target.transform.position);
+        }
+        //最終目標地点まで移動が終わった場合
+        else
+        {
+            //敵の攻撃
+            if (isAttacker)
+            {
+                if (attackInterval <= 0.0f)
+                {
+                    animator.SetTrigger("Attack");
 
-		if (Time.frameCount % 60 == 0)
-		{
-			if (!Mathf.Approximately(agent.destination.x, moveTarget.position.x)
-				|| !Mathf.Approximately(agent.destination.y, moveTarget.position.y)
-				|| !Mathf.Approximately(agent.destination.z, moveTarget.position.z))
-			{
-				if (agent.enabled)
-				{
-					agent.destination = moveTarget.position;
-				}
-			}
-		}
+                    // ダメージ表示　一旦消し
+                    //WaitAfter( 1.5f, ()=>{
 
-		if (agent.enabled && !agent.pathPending)
-		{
-			if (agent.remainingDistance <= agent.stoppingDistance)
-			{
-				if (!agent.hasPath || agent.velocity.sqrMagnitude == 0.0f)
-				{
-					if (isAttacker)
-					{
-						if (attackInterval <= 0.0f)
-						{
-							animator.SetTrigger("Attack");
+                    //	HealthDisp.Instance.Sub();
+                    //});
 
-							// ダメージ表示　一旦消し
-							//WaitAfter( 1.5f, ()=>{
+                    attackInterval = ATTACK_INTERVAL;
+                }
+            }
+        }    
+        //-----ここまで新規で追加---------------
 
-							//	HealthDisp.Instance.Sub();
-							//});
+        //if (Input.GetKeyDown(KeyCode.D))
+        //{
+        //	Damage(1);
+        //}
 
-							attackInterval = ATTACK_INTERVAL;
-						}
-					}
-				}
-			}
-		}
-	}
+        //if (Time.frameCount % 60 == 0)
+        //{
+        //	if (!Mathf.Approximately(agent.destination.x, moveTarget.position.x)
+        //		|| !Mathf.Approximately(agent.destination.y, moveTarget.position.y)
+        //		|| !Mathf.Approximately(agent.destination.z, moveTarget.position.z))
+        //	{
+        //		if (agent.enabled)
+        //		{
+        //			agent.destination = moveTarget.position;
+        //		}
+        //	}
+        //}
+
+        //if (agent.enabled && !agent.pathPending)
+        //{
+        //	if (agent.remainingDistance <= agent.stoppingDistance)
+        //	{
+        //		if (!agent.hasPath || agent.velocity.sqrMagnitude == 0.0f)
+        //		{
+
+        //		}
+        //	}
+        //}      
+    }
 
 	void FixedUpdate()
 	{

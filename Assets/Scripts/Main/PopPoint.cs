@@ -36,6 +36,11 @@ public class PopPoint : MonoBehaviorExpansion {
 
 	List<GameObject> listEnemys;
 
+    //----追加項目--------
+    [SerializeField, Header("目標地点")]
+    Transform[] MovePoint;
+    //----ここまで新規で追加-----
+
 	public enum SelectType
 	{	// 目標決定のタイプ
 		RANDOM	= 0,
@@ -127,8 +132,13 @@ public class PopPoint : MonoBehaviorExpansion {
 				break;
 		}
 
-		// 移動目標とボーナススコアを設定
-		enemy.GetComponent<EnemyBase>().SetPopData( arrayMoveTarget[minIdx].transform, bonusScore, isAttacker);
+        // 移動目標とボーナススコアを設定
+        enemy.GetComponent<EnemyBase>().SetPopData(arrayMoveTarget[minIdx].transform, bonusScore, isAttacker);
+
+        //---以下から追加項目------
+        //移動目標を設定する
+        enemy.GetComponent<EnemyBase>().SetMoveTarget(MovePoint);
+        //---ここまで新規追加------
 
 		listEnemys.Add(enemy);
 
