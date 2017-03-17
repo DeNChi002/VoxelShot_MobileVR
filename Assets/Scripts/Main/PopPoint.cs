@@ -28,8 +28,8 @@ public class PopPoint : MonoBehaviorExpansion {
 	[SerializeField, Header("ボーナス加算スコア")]
 	int bonusScore = 0;
 
-	[SerializeField]
-	GameObject[] arrayMoveTarget;
+	//[SerializeField]
+	//GameObject[] arrayMoveTarget;
 
     [SerializeField]
     GameObject[] arrayEnemyPrefab;
@@ -113,27 +113,28 @@ public class PopPoint : MonoBehaviorExpansion {
 
 		var minIdx = 0;
 
-		switch (selectType)
-		{
-			case SelectType.RANDOM:
-				// ランダム
-				minIdx = Random.Range(0, arrayMoveTarget.Length);
-				break;
-			case SelectType.CLOSEST:
-				// 一番近いところを探す
-				for (int i = 0; i < arrayMoveTarget.Length; i++)
-				{
-					if (Vector3.Distance(arrayMoveTarget[i].transform.position, transform.position) <
-						Vector3.Distance(arrayMoveTarget[minIdx].transform.position, transform.position))
-					{
-						minIdx = i;
-					}
-				}
-				break;
-		}
+        //switch (selectType)
+        //{
+        //    case SelectType.RANDOM:
+        //        //ランダム
+        //       minIdx = Random.Range(0, arrayMoveTarget.Length);
+        //        break;
+        //    case SelectType.CLOSEST:
+        //        //一番近いところを探す
+
+        //        for (int i = 0; i < arrayMoveTarget.Length; i++)
+        //        {
+        //            if (Vector3.Distance(arrayMoveTarget[i].transform.position, transform.position) <
+        //                Vector3.Distance(arrayMoveTarget[minIdx].transform.position, transform.position))
+        //            {
+        //                minIdx = i;
+        //            }
+        //        }
+        //        break;
+        //}
 
         // 移動目標とボーナススコアを設定
-        enemy.GetComponent<EnemyBase>().SetPopData(arrayMoveTarget[minIdx].transform, bonusScore, isAttacker);
+        //enemy.GetComponent<EnemyBase>().SetPopData(arrayMoveTarget[minIdx].transform, bonusScore, isAttacker);
 
         //---以下から追加項目------
         //移動目標を設定する

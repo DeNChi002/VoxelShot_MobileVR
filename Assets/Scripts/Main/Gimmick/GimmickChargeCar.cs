@@ -17,14 +17,14 @@ public class GimmickChargeCar : GimmickBase {
 	[SerializeField]
 	Rigidbody rigid;
 
-	[SerializeField] // ヘッドライト
-	GameObject[] arrayHeadLight;
+	//[SerializeField] // ヘッドライト
+	//GameObject[] arrayHeadLight;
 
 	[SerializeField]
 	ParticleSystem[] arrayTireSmoke;
 
-	[SerializeField]
-	NavMeshObstacle navMeshObstacle;
+	//[SerializeField]
+	//NavMeshObstacle navMeshObstacle;
 
 	void FixedUpdate()
 	{
@@ -43,17 +43,17 @@ public class GimmickChargeCar : GimmickBase {
 			ps.Play();
 		}
 
-		WaitAfter( 1.0f, () => {
+		//WaitAfter( 1.0f, () => {
 
-			foreach (GameObject go in arrayHeadLight)
-			{
-				go.SetActive(true);
-			}
-		});
+		//	//foreach (GameObject go in arrayHeadLight)
+		//	//{
+		//	//	go.SetActive(true);
+		//	//}
+		//});
 
 		WaitAfter( 2.0f, () => {
 
-			navMeshObstacle.enabled = false;
+			//navMeshObstacle.enabled = false;
 			carAnimator.enabled = true;
 			VR_AudioManager.Instance.PlaySE(AUDIO_NAME.SE_CAR_ROCKET_START, transform.position, 2.0f, 1.0f, gameObject);
 		});
